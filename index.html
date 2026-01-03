@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajveer | Souk</title>
+
+<style>
+:root {
+    --bg: #04060d;
+    --panel: #0d1117;
+    --border: #1f2937;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #00eaff;
+    --accent2: #7c8cff;
+    --glow: 0 0 22px rgba(0,234,255,.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background: radial-gradient(circle at top, #0a1020, var(--bg));
+    color: var(--text);
+    padding: 40px 16px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.header {
+    border: 1px solid var(--border);
+    background: linear-gradient(145deg, #0b1224, var(--panel));
+    border-radius: 20px;
+    padding: 34px;
+    box-shadow: var(--glow);
+}
+
+.header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+.alias {
+    color: var(--accent);
+}
+
+.sub {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.socials {
+    margin-top: 18px;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 16px;
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.socials a:hover {
+    color: var(--accent);
+    text-shadow: var(--glow);
+}
+
+.section {
+    margin-top: 34px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--panel);
+    padding: 30px;
+}
+
+.section h2 {
+    color: var(--accent2);
+    margin-bottom: 18px;
+    font-size: 1.45rem;
+}
+
+.term {
+    background: #02040a;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #9efeff;
+}
+
+.term span {
+    color: var(--accent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    background: linear-gradient(180deg, #0c1325, #090d17);
+}
+
+.tag {
+    display: inline-block;
+    margin: 6px 8px 0 0;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--accent);
+    background: rgba(0,234,255,.06);
+    font-size: .85rem;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 42px;
+    color: var(--muted);
+    font-size: .8rem;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Rajveer <span class="alias">(Souk)</span></h1>
+        <p class="sub">
+            16 · Student · Developer who likes understanding how things actually work
+        </p>
+
+        <!-- SOCIAL LINKS -->
+        <div class="socials">
+            <a href="https://github.com/rajveerexe" target="_blank">GitHub</a>
+            <a href="https://instagram.com/r3xwc" target="_blank">Instagram</a>
+            <a href="https://t.me/SoukPy" target="_blank">Telegram</a>
+        </div>
+    </div>
+
+    <!-- WHOAMI -->
+    <div class="section">
+        <h2>~/whoami</h2>
+        <div class="term">
+            <span>$</span> name = Rajveer<br>
+            <span>$</span> alias = Souk<br>
+            <span>$</span> age = 16<br>
+            <span>$</span> likes = breaking problems, fixing logic, learning internals<br>
+            <span>$</span> goal = get better every day, no shortcuts
+        </div>
+    </div>
+
+    <!-- ACTIVE FOCUS -->
+    <div class="section">
+        <h2>~/active_focus</h2>
+
+        <div class="grid">
+            <div class="card">
+                <strong>🔐 Security & Crypto</strong>
+                <p style="color: var(--muted); margin-top: 8px;">
+                    Playing with encryption and decryption ideas, understanding
+                    how data changes when it’s encoded, XORed, or transformed.
+                </p>
+            </div>
+
+            <div class="card">
+                <strong>⚙️ Low-level Thinking</strong>
+                <p style="color: var(--muted); margin-top: 8px;">
+                    Learning C and trying to understand memory, binaries,
+                    and what really happens under the hood.
+                </p>
+            </div>
+
+            <div class="card">
+                <strong>🧠 Problem Solving</strong>
+                <p style="color: var(--muted); margin-top: 8px;">
+                    Breaking problems into simple steps and writing logic
+                    that actually makes sense, not just works.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <h2>Languages</h2>
+        <div class="grid">
+            <div class="card">
+                <strong>Comfortable With</strong>
+                <div>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+            <div class="card">
+                <strong>Currently Learning</strong>
+                <div>
+                    <span class="tag">C</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Shell / Bash</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERESTS -->
+    <div class="section">
+        <h2>Things I’m Into</h2>
+        <div class="grid">
+            <div class="card">🔐 Encryption & Decryption</div>
+            <div class="card">🧠 Logic & Problem Solving</div>
+            <div class="card">📊 Data Analysis</div>
+            <div class="card">⚙️ Low-level & Runtime Behavior</div>
+        </div>
+    </div>
+
+    <!-- PHILOSOPHY -->
+    <div class="section">
+        <h2>How I Think About Code</h2>
+        <p style="color: var(--muted); line-height: 1.7;">
+            I like knowing why something works, not just that it works.
+            Clean logic, predictable behavior, and learning the fundamentals
+            matter more to me than rushing or copying solutions.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © Rajveer · aka Souk · @rajveerexe
+    </div>
+
+</div>
+</body>
+</html>
