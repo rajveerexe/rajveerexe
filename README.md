@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rajveerexe.github.io">
+  <a href="https://rajveerexe.github.io/rajveerexe">
     🌐 Personal Site
   </a>
 </p>
